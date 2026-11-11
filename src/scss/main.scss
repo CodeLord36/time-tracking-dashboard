@@ -1,0 +1,17 @@
+@import "abstracts/variables";
+@import "base/reset";
+@import "components/profile";
+@import "components/card";
+@import "components/layout";
+
+// Global layout
+body {
+  font-family: $font-family;
+  background-color: $navy-950;
+  color: $white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
