@@ -1,0 +1,90 @@
+@use "../abstracts/variables" as *;
+
+.profile-info {
+  background-color: $primary-purple-600;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 1rem;
+  padding: 2.25rem 2rem;
+
+  // Desktop styles
+  @media (min-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+    flex-basis: 60%;
+    padding-bottom: 4.5rem;
+  }
+}
+
+.profile-picture {
+  width: 4.25rem;
+  height: 4.25rem;
+  border-radius: 50%;
+  border: 3px solid $white;
+
+  @media (min-width: 768px) {
+    width: 5.75rem;
+    height: 5.75rem;
+  }
+}
+
+.profile-text {
+  color: $white;
+  font-weight: 300;
+
+  @media (min-width: 768px) {
+    margin-top: 1.5rem;
+  }
+}
+
+.profile-report {
+  color: $navy-200;
+  font-size: 0.9em;
+
+  @media (min-width: 768px) {
+    font-size: 1em;
+  }
+}
+
+.profile-name {
+  font-size: 1.5em;
+
+  @media (min-width: 768px) {
+    max-width: 9.25rem;
+    font-size: 2.5em;
+    line-height: 1.2;
+  }
+}
+
+.time-frames {
+  padding: 1.5rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  // Desktop styles
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-basis: 40%;
+    padding: 1.5rem 2rem;
+    gap: 1rem;
+  }
+}
+
+.time-frame-btn {
+  color: $navy-200;
+  font-size: 1.05em;
+  font-weight: 400;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $white;
+  }
+}
+
+.active {
+  color: $white;
+}
