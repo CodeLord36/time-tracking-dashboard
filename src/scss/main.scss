@@ -1,8 +1,8 @@
-@import "abstracts/variables";
-@import "base/reset";
-@import "components/profile";
-@import "components/card";
-@import "components/layout";
+@use "./abstracts/variables" as *;
+@use "./base/reset";
+@use "./components/profile";
+@use "./components/card";
+@use "./components/layout";
 
 // Global layout
 body {
@@ -14,4 +14,13 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+//Footer styling
+.attribution {
+  font-size: 1em;
+  text-align: center;
+}
+.attribution a {
+  color: $navy-200;
 }
